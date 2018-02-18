@@ -14,7 +14,11 @@
     "react-ui/node_modules"
   ],
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "request": "^2.83.0",
+    "unsplash-api": "^1.2.0",
+    "unsplash-js": "^4.8.0",
+    "dotenv": "^5.0.0"
   },
   "repository": {
     "type": "git",
