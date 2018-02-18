@@ -117,9 +117,9 @@ import { UnsplashUser } from './UnsplashUser';
       let cachedLon = localStorage.getItem('longitude');
 
       // checks to see if a lat already exists. If so, then no need to getCoords()
-      // cachedLat ? this.setCoordsFromLocalStorage(cachedLat, cachedLon) : this.getCoords();
+      cachedLat ? this.setCoordsFromLocalStorage(cachedLat, cachedLon) : this.getCoords();
 
-      this.getCoords();
+      // this.getCoords();
 
       fetch('/api')
         .then(response => {
