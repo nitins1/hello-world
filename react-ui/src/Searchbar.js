@@ -10,6 +10,7 @@ export class Searchbar extends React.Component {
     evt.preventDefault();
     const location = this.textInput.value;
     this.props.onClick(location);
+    this.textInput.value = '';
   }
 
   render() {

@@ -6,6 +6,7 @@ import { Searchbar } from './Searchbar';
 import { Unsplash } from './Unsplash';
 import { UnsplashUser } from './UnsplashUser';
 
+
   export class App extends Component {
     constructor(props) {
       super(props);
@@ -128,7 +129,7 @@ import { UnsplashUser } from './UnsplashUser';
         <Searchbar errorClass={this.state.errorClass} onSubmit={this.changeLocation} onClick={this.changeLocation}/>
         {
           this.state.loading ?
-          <div className="loading"></div> :
+          <div className="loading"><p>loading...</p></div> :
           <Info
             errorText={this.state.errorText}
             formError={this.state.formError}
